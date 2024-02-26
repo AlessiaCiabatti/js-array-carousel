@@ -18,3 +18,7 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
   - creare un contatore (counter) partendo dalla prima img cioè 0
   - devo incrementare e decrementare questo counter quando clicco le frecce
     - creare in HTML gli elementi con freccia, btn top e bottom, richiamarli in js
+
+5. al click del mouse devo aggiungere la classe hide alle immagini che si incrementano e che si decrementano
+
+6. all'immagine corrente rimuovo la classse hide

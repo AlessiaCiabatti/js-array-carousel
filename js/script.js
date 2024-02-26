@@ -39,11 +39,15 @@ fotoCollection[0].classList.remove('hide');
 // 4
 // incremento bottone sopra
 sopra.addEventListener('click', function(){
-  counterImg++;
-  console.log(counterImg);
+  // quando clicco la freccia aggiungo hide all'incremento
+  fotoCollection[counterImg++].classList.add('hide');
+  // img corrente
+  fotoCollection[counterImg].classList.remove('hide');
 })
 // decremento bottone sotto
 sotto.addEventListener('click', function(){
-  counterImg--;
-  console.log(counterImg);
+  // quando clicco la freccia aggiungo hide al decremento
+  fotoCollection[counterImg++].classList.add('hide');
+  // img corrente
+  fotoCollection[counterImg].classList.remove('hide');
 })
