@@ -43,11 +43,18 @@ sopra.addEventListener('click', function(){
   fotoCollection[counterImg++].classList.add('hide');
   // img corrente
   fotoCollection[counterImg].classList.remove('hide');
+  // se il contatore è maggiore o uguale alla lunghezza delle immagini, ritorna a 0
+  if (counterImg >= images.length) {
+    counterImg = 0;
+  }
 })
 // decremento bottone sotto
 sotto.addEventListener('click', function(){
   // quando clicco la freccia aggiungo hide al decremento
-  fotoCollection[counterImg++].classList.add('hide');
+  fotoCollection[counterImg--].classList.add('hide');
   // img corrente
   fotoCollection[counterImg].classList.remove('hide');
+  // se counterImg è 0 
 })
+// in questo modo sia che clicco la freccia sopra o la freccia sotto, l'immagine che si incremento o decrementa avrà hide, e a quella corrente lo togliamo
+
