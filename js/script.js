@@ -37,24 +37,34 @@ const fotoCollection = document.getElementsByClassName('foto');
 fotoCollection[0].classList.remove('hide');
 
 // 4
-// incremento bottone sopra
-sopra.addEventListener('click', function(){
+// incremento bottone sotto
+sotto.addEventListener('click', function(){
   // quando clicco la freccia aggiungo hide all'incremento
   fotoCollection[counterImg++].classList.add('hide');
-  // img corrente
-  fotoCollection[counterImg].classList.remove('hide');
+  
   // se il contatore è maggiore o uguale alla lunghezza delle immagini, ritorna a 0
-  if (counterImg >= images.length) {
+  if(counterImg >= fotoCollection.length){
     counterImg = 0;
   }
-})
-// decremento bottone sotto
-sotto.addEventListener('click', function(){
-  // quando clicco la freccia aggiungo hide al decremento
-  fotoCollection[counterImg--].classList.add('hide');
+
   // img corrente
   fotoCollection[counterImg].classList.remove('hide');
-  // se counterImg è 0 
 })
-// in questo modo sia che clicco la freccia sopra o la freccia sotto, l'immagine che si incremento o decrementa avrà hide, e a quella corrente lo togliamo
 
+
+// decremento bottone sopra
+sopra.addEventListener('click', function(){
+  console.log(counterImg);
+  
+  // img corrente
+  fotoCollection[counterImg].classList.add('hide');
+
+  if(counterImg === 0){
+    counterImg = images.length-1;
+  }else{
+    counterImg--;
+  }
+
+  // quando clicco la freccia aggiungo hide al decremento
+  fotoCollection[counterImg].classList.remove('hide');
+})

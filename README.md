@@ -22,3 +22,7 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
 5. al click del mouse devo aggiungere la classe hide alle immagini che si incrementano e che si decrementano
 
 6. all'immagine corrente rimuovo la classse hide
+
+7. **ciclo infinito** Ovvero se è attiva la prima immagine e l’utente clicca la freccia per andare all’immagine precedente, dovrà comparire l’ultima immagine dell’array e viceversa
+  - se io sono sulla prima img, e clicco la freccia sopra, mi appare l'ultima img
+  - se sono sull'ultima img e clicco sulla freccia sotto, mi appare la prima img
