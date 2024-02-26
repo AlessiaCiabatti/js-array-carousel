@@ -11,3 +11,5 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
   - ciclo for che concatena il template literal delle img, tutte le immagini saranno display: none
 
   3. togliere la classe hide solo alla prima immagine
+    - devo prendere tutti gli elementi
+    - identificare il primo e togliere la classe hide
