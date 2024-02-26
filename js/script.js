@@ -4,8 +4,11 @@ const allImg = document.querySelector('.all-images');
 
 // 4
 // richiamo bottoni
-const sopra = document.querySelector('.top');
-const sotto = document.querySelector('.bottom');
+const sopra = document.querySelector('.sopra');
+const sotto = document.querySelector('.sotto');
+
+// contatore
+let counterImg = 0;
 
 // 2
 // tutte le immagini
@@ -32,3 +35,15 @@ const fotoCollection = document.getElementsByClassName('foto');
 
 // identifico il primo elemento e tolgo hide
 fotoCollection[0].classList.remove('hide');
+
+// 4
+// incremento bottone sopra
+sopra.addEventListener('click', function(){
+  counterImg++;
+  console.log(counterImg);
+})
+// decremento bottone sotto
+sotto.addEventListener('click', function(){
+  counterImg--;
+  console.log(counterImg);
+})
