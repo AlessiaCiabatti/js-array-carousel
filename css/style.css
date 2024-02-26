@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.main-wrapper{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.slider{
+  height: 60%;
+  width: 80%;
+  background-color: red;
+}
+
+.all-images{
+  height: 100%;
+}
+
+.all-images img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
