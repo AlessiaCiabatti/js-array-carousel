@@ -2,6 +2,11 @@
 const allImg = document.querySelector('.all-images');
 // adesso nel for concateno allImg += 
 
+// 4
+// richiamo bottoni
+const sopra = document.querySelector('.top');
+const sotto = document.querySelector('.bottom');
+
 // 2
 // tutte le immagini
 const images = [
